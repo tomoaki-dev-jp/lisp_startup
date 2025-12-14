@@ -25,3 +25,13 @@ Thumbs.db
 # Temp
 /tmp/
 *.tmp
+
+# SBCL - fasl だけ除外（.lisp は入れる）
+*.fasl
+*.o
+*.so
+
+# .vscode は無視（コンテナ内に閉じ込めてるからそもそも出ない）
+.vscode/
+
+# その他...
