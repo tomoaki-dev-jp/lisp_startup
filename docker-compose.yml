@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  commonlisp:
+    build: .
+    container_name: lisp_startup
+    volumes:
+      # ホスト側のコードだけマウント
+      - ./lisp_code:/workspace/code:ro
+      # ALIVE キャッシュはコンテナ内だけ（ホストから隠す）
+      - lisp_cache:/workspace/.vscode
+    stdin_open: true
+    tty: true
+    ports:
+      - "4005:4005"
+    working_dir: /workspace
+
+volumes:
+  lisp_cache:
+    driver: local

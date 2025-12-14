@@ -1,0 +1,27 @@
+# Quicklisp
+.quicklisp/
+quicklisp/
+
+# SBCL
+*.fasl
+*.o
+*.so
+
+# Editors
+.vscode/
+lisp_code/.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
+
+# Temp
+/tmp/
+*.tmp
