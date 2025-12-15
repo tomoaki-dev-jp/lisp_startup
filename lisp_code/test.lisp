@@ -3,6 +3,7 @@
 ;;; VS Code ALIVE で Ctrl+Enter で実行してみてね！
 
 ;;; 1. Hello World
+
 (format t "~%=== Hello, Common Lisp! ===~%~%")
 
 ;;; 2. 基本的な関数
