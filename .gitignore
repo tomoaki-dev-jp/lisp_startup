@@ -33,5 +33,7 @@ Thumbs.db
 
 # .vscode は無視（コンテナ内に閉じ込めてるからそもそも出ない）
 .vscode/
+lisp_code/.vscode/
+lisp_code/*.fasl
 
 # その他...
